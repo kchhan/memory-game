@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* main styling */
+main {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+/* header styling */
+.header {
+  text-align: center;
+}
+
+.title {
+  font-size: 3rem;
+}
+
+.rules {
+  font-size: 1.3rem;
+}
+
+.scores {
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.3rem;
+}
+
+/* game container styling */
+.game-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* card styling */
+img {
+  border: 1px solid black;
+}
+
+.card {
+  margin: 5px;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 15px;
+}
