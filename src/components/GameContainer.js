@@ -1,14 +1,24 @@
 import React from 'react';
-import CardInstance from './CardInstance'
+import CardInstance from './CardInstance';
 
-import '../style.css'
+function GameContainer({ data, updateCard }) {
+  const updateCardGC = (card) => {
+    updateCard(card);
+  };
 
-function GameContainer({data}) {
-  return <section className="game-container">
-      {data.map((cardData)=>{
-        return <CardInstance key={cardData.id} cardData={cardData}/>
+  return (
+    <section className='game-container'>
+      {data.map((cardData) => {
+        return (
+          <CardInstance
+            key={cardData.id}
+            cardData={cardData}
+            updateCardCI={updateCardGC}
+          />
+        );
       })}
-  </section>
+    </section>
+  );
 }
 
 export default GameContainer;

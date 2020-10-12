@@ -6,9 +6,15 @@
 }
 
 /* main styling */
+body {
+  background-image: url('https://images.unsplash.com/photo-1524661135-423995f22d0b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1353&q=80');
+  background-size: cover;
+}
+
 main {
   max-width: 1600px;
   margin: 0 auto;
+  
 }
 
 /* header styling */
@@ -40,12 +46,22 @@ main {
 
 /* card styling */
 img {
-  border: 1px solid black;
+  border: 1px solid #000;
 }
 
 .card {
   margin: 5px;
   padding: 10px;
-  border: 1px solid black;
+  border: 1px solid #000;
   border-radius: 15px;
+  background-color: #ddd;
+}
+
+.card:hover {
+  box-shadow: 0 12px 24px #999, 0 12px 24px #999;
+  width: 250;
+}
+
+.country {
+  text-align: center;
 }
